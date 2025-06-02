@@ -1,0 +1,167 @@
+body {
+    background-color: #1a1a2e;
+    color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #16213e;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #e94560;
+    font-size: 2.5rem;
+}
+
+.slogan {
+    font-style: italic;
+}
+
+nav button {
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.minimo-compra {
+    background-color: #e94560;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.combos-section {
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #e94560;
+}
+
+.combo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.combo {
+    background-color: #2a2a3a;
+    border-radius: 8px;
+    padding: 15px;
+    position: relative;
+}
+
+.combo-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.combo-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.combo-info {
+    padding: 10px;
+}
+
+.combo-price {
+    color: #e94560;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.shop-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-order {
+    padding: 20px;
+}
+
+.order-form {
+    margin-top: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    margin-top: 20px;
+}
+
+.conditions {
+    padding: 20px;
+}
+
+.conditions-list {
+    list-style: none;
+}
+
+.site-footer {
+    background-color: #16213e;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #e94560;
+
+}
+
+.copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}

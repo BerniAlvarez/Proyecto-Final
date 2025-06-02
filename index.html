@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chefinha - Distribuidora de Bebidas</title>
+    <title>Ley Seca - Distribuidora Mayorista</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>CHEFINHA</h1>
+        <h1>LEY SECA</h1>
+        <p class="slogan">Distribución que desafía la prohibición</p>
         <nav>
             <button id="inicio">Inicio</button>
             <button id="combos">Combos</button>
@@ -17,108 +20,157 @@
     </header>
 
     <main>
-        <div>
+        <div class="minimo-compra">
             <h3>COMPRA MÍNIMA: $150.000</h3>
+            <p>Servicio exclusivo para eventos/comercios habilitados</p>
         </div>
 
-        <div>
-            <h2>Combos Promocionales</h2>
+        <section class="combos-section">
+            <h2 class="section-title">PROHIBIDO NO TENER STOCK</h2>
             
-            <div>
-                <h3>COMBO REFRESCOS (50 unidades)</h3>
-                <ul>
-                    <li>20 Coca-Cola 2.25L</li>
-                    <li>15 Sprite 2.25L</li>
-                    <li>10 Fanta 2.25L</li>
-                    <li>5 Schweppes 2.25L</li>
-                </ul>
-                <p>$85.000</p>
+            <div class="combo-grid">
+                <div class="combo">
+                    <div class="combo-badge">MÁS VENDIDO</div>
+                    <img src="assets/combo-refrescos.jpg" alt="Combo Refrescos" class="combo-image">
+                    <div class="combo-info">
+                        <h3 class="combo-category">LEY SECA | COMBO CONTRAVENCION</h3>
+                        <h2 class="combo-title">REFRESCOS ILEGALMENTE BUENOS</h2>
+                        <p class="combo-description">50 unidades</p>
+                        <ul class="combo-details">
+                            <li>20 Coca-Cola 2.25L</li>
+                            <li>15 Sprite 2.25L</li>
+                            <li>10 Fanta 2.25L</li>
+                            <li>5 Schweppes 2.25L</li>
+                        </ul>
+                        <p class="combo-price">$85.000</p>
+                        <button class="shop-btn">ADQUIRIR</button>
+                    </div>
+                </div>
+                
+                <div class="combo 2">
+                    <div class="combo-badge">NUEVO</div>
+                    <img src="assets/combo-cervezas.jpg" alt="Combo Cervezas" class="combo-image">
+                    <div class="combo-info">
+                        <h3 class="combo-category">LEY SECA | COMBO ALCOHOLÍMETRO</h3>
+                        <h2 class="combo-title">CERVEZAS</h2>
+                        <p class="combo-description">100 unidades</p>
+                        <ul class="combo-details">
+                            <li>40 Quilmes 1L</li>
+                            <li>30 Stella Artois 1L</li>
+                            <li>20 Heineken 1L</li>
+                            <li>10 Corona 1L</li>
+                        </ul>
+                        <p class="combo-price">$120.000</p>
+                        <button class="shop-btn">ADQUIRIR</button>
+                    </div>
+                </div>
+                
+                <div class="combo 3">
+                    <div class="combo-badge">OFERTA</div>
+                    <img src="assets/combo-aguas.jpg" alt="Combo Aguas" class="combo-image">
+                    <div class="combo-info">
+                        <h3 class="combo-category">LEY SECA | COMBO HIDRATACIÓN</h3>
+                        <h2 class="combo-title">AGUAS</h2>
+                        <p class="combo-description">80 unidades</p>
+                        <ul class="combo-details">
+                            <li>40 Villavicencio 2L</li>
+                            <li>30 Eco de los Andes 2L</li>
+                            <li>10 Smartwater 1L</li>
+                        </ul>
+                        <p class="combo-price">$65.000</p>
+                        <button class="shop-btn">ADQUIRIR</button>
+                    </div>
+                </div>
             </div>
-            
-            <div>
-                <h3>COMBO CERVEZAS (100 unidades)</h3>
-                <ul>
-                    <li>40 Quilmes 1L</li>
-                    <li>30 Stella Artois 1L</li>
-                    <li>20 Heineken 1L</li>
-                    <li>10 Corona 1L</li>
-                </ul>
-                <p>$120.000</p>
-            </div>
-            
-            <div>
-                <h3>COMBO AGUAS (80 unidades)</h3>
-                <ul>
-                    <li>40 Villavicencio 2L</li>
-                    <li>30 Eco de los Andes 2L</li>
-                    <li>10 Smartwater 1L</li>
-                </ul>
-                <p>$65.000</p>
-            </div>
-        </div>
+        </section>
 
-        <div>
-            <h2>Armá tu pedido</h2>
-            <form>
-                <div>
-                    <label>Coca-Cola 2.25L</label>
-                    <input type="number" min="0" placeholder="Cantidad">
+        <section class="custom-order">
+            <h2 class="section-title">PEDIDO PERSONALIZADO</h2>
+            <form class="order-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label><i class="fas fa-wine-bottle"></i> Coca-Cola 2.25L ($1.800 c/u)</label>
+                        <input type="number" min="0" placeholder="Cantidad" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-beer"></i> Quilmes 1L ($1.200 c/u)</label>
+                        <input type="number" min="0" placeholder="Cantidad" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-wine-bottle"></i> Villavicencio 2L ($800 c/u)</label>
+                        <input type="number" min="0" placeholder="Cantidad" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-wine-bottle"></i> Sprite 2.25L ($1.700 c/u)</label>
+                        <input type="number" min="0" placeholder="Cantidad" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-beer"></i> Stella Artois 1L ($1.300 c/u)</label>
+                        <input type="number" min="0" placeholder="Cantidad" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-beer"></i> Heineken 1L ($1.500 c/u)</label>
+                        <input type="number" min="0" placeholder="Cantidad" class="form-input">
+                    </div>
                 </div>
                 
-                <div>
-                    <label>Quilmes 1L</label>
-                    <input type="number" min="0" placeholder="Cantidad">
-                </div>
-                
-                <div>
-                    <label>Villavicencio 2L</label>
-                    <input type="number" min="0" placeholder="Cantidad">
-                </div>
-                
-                <div>
-                    <label>Sprite 2.25L</label>
-                    <input type="number" min="0" placeholder="Cantidad">
-                </div>
-                
-                <div>
-                    <label>Stella Artois 1L</label>
-                    <input type="number" min="0" placeholder="Cantidad">
-                </div>
-                
-                <div>
-                    <h3>Tus Datos</h3>
-                    <input type="text" placeholder="Nombre del Comercio" >
-                    <input type="number" placeholder="Teléfono">
-                    <input type="email" placeholder="Email">
-                    <input type="number" placeholder="Direccion de entrega">
-                </div>
-                
-                <button type="submit">Solicitar presupuesto</button>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> SOLICITAR PEDIDO
+                </button>
             </form>
-        </div>
+        </section>
 
-        <div>
-            <h3>Condiciones Comerciales</h3>
-            <ul>
-                <li>Mínimo de compra: $150.000</li>
-                <li>Venta a comercios</li>
-                <li>Pagos contra factura</li>
+        <section class="conditions">
+            <h3><i class="fas fa-file-contract"></i> CONDICIONES DE LA OPERACIÓN</h3>
+            <ul class="conditions-list">
+                <li><i class="fas fa-hand-holding-usd"></i> Mínimo de compra: $150.000</li>
+                <li><i class="fas fa-store-alt"></i> Solo comercios/eventos autorizados</li>
+                <li><i class="fas fa-money-bill-wave"></i> Pagos en efectivo o transferencia</li>
+                <li><i class="fas fa-truck"></i> Entregas en 24/48hs</li>
+                <li><i class="fas fa-calendar-check"></i> Pedidos con 48hs de anticipación</li>
             </ul>
-        </div>
+        </section>
     </main>
 
-    <footer>
-        <div>
-            <h2>Contacto</h2>
-            <p>Teléfono: 11-4300-0000</p>
-            <p>Email: ventas@chefinha.com.ar</p>
-            <p>Dirección: Lavardén 315, CABA</p>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h2><i class="fas fa-address-book"></i> CONTACTO</h2>
+                <ul class="footer-list">
+                    <li><i class="fas fa-phone"></i> 11-4300-0000</li>
+                    <li><i class="fas fa-envelope"></i> contacto@leyseca.com.ar</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Zona Norte - Dirección exacta al confirmar pedido</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h2><i class="fas fa-clock"></i> HORARIO</h2>
+                <ul class="footer-list">
+                    <li>Lunes a Viernes: 8am - 6pm</li>
+                    <li>Sábados: 9am - 1pm</li>
+                    <li>Emergencias: 24/7 (consultar)</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h2><i class="fas fa-gavel"></i> LEY SECA</h2>
+                <p>"Distribución premium para eventos exclusivos"</p>
+                <p class="cuit"><i class="fas fa-id-card"></i> CUIT: 30-12345678-9</p>
+                <div class="iconos">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
         </div>
         
-        <div>
-            <h2>Horario de atención</h2>
-            <p>Lunes a Viernes: 8am - 6pm</p>
-            <p>Sábados: 9am - 1pm</p>
+        <div class="copyright">
+            <p>&copy; 2023 LEY SECA S.R.L. - Operación autorizada bajo registro #BA-456789</p>
         </div>
     </footer>
 </body>
